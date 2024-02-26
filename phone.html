@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple iPhone Hub with brand new iPhones</title>
+  <link rel="stylesheet" href="promax.css">
+</head>
+
+<body>
+  <header>
+    <h1>Apple iPhone Commercial Website</h1>
+    <p>Discover the latest iPhones from iPhone 11 Pro Max to iPhone 15 Pro Max</p>
+  </header>
+
+  <section id="iPhone-list">
+    <!-- iPhone 15 Pro Max -->
+    <div class="page" id="page1">
+      <img src="iPhone15.jpg" alt="iPhone 15 Pro Max">
+      <h2>iPhone 15 Pro Max</h2>
+      <p>Introducing the latest and greatest iPhone with cutting-edge features.</p>
+      <button onclick="buyiPhone('iPhone 15 Pro Max', 1500)">BUY</button>
+      <a href="#" onclick="changePage(2)">Go to Page 2</a>
+    </div>
+
+    <!-- iPhone 14 Pro Max -->
+    <div class="page" id="page2" style="display: none;">
+      <img src="iPhone14.jpg" alt="iPhone 14 Pro Max">
+      <h2>iPhone 14 Pro Max</h2>
+      <p>Experience the powerful performance and stunning design of iPhone 14 Pro Max.</p>
+      <button onclick="buyiPhone('iPhone 14 Pro Max', 1300)">BUY</button>
+      <a href="#" onclick="changePage(1)">Go to Page 1</a>
+      <a href="#" onclick="changePage(3)">Go to Page 3</a>
+    </div>
+
+    <!-- iPhone 13 Pro Max -->
+    <div class="page" id="page3" style="display: none;">
+      <img src="iPhone13.jpg" alt="iPhone 13 Pro Max">
+      <h2>iPhone 13 Pro Max</h2>
+      <p>Discover the advanced camera system and improved battery life of iPhone 13 Pro Max.</p>
+      <button onclick="buyiPhone('iPhone 13 Pro Max', 1200)">BUY</button>
+      <a href="#" onclick="changePage(2)">Go to Page 2</a>
+      <a href="#" onclick="changePage(4)">Go to Page 4</a>
+    </div>
+
+    <!-- iPhone 12 Pro Max -->
+    <div class="page" id="page4" style="display: none;">
+      <img src="iPhone12.jpg" alt="iPhone 12 Pro Max">
+      <h2>iPhone 12 Pro Max</h2>
+      <p>Explore the stunning design and powerful performance of iPhone 12 Pro Max.</p>
+      <button onclick="buyiPhone('iPhone 12 Pro Max', 1000)">BUY</button>
+      <a href="#" onclick="changePage(3)">Go to Page 3</a>
+      <a href="#" onclick="changePage(5)">Go to Page 5</a>
+    </div>
+    
+    <div class="page" id="page5" style="display: none;">
+      <img src="iPhone11.jpg" alt="iPhone 11 Pro Max">
+      <h2>iPhone 11 Pro Max</h2>
+      <p>Experience the pinnacle of performance and innovation with the iPhone 11 Pro Max. </p>
+      <button onclick="buyiPhone('iPhone 11 Pro Max', 900)">BUY</button>
+      <a href="#" onclick="changePage(4)">Go to Page 4</a>
+    </div>
+  </section>
+
+  <section id="iPhone-details" class="hidden">
+    <!-- Details for the selected iPhone will be displayed here -->
+  </section>
+ 
+  <script src="IPhone.js"></script>
+</body>
+</html>
